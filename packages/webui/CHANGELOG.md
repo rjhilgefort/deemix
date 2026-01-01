@@ -1,5 +1,11 @@
 # deemix-webui
 
+## 4.4.5
+
+### Patch Changes
+
+- 46b4fa6: Add hardcoded offset for mobile browser bottom bars
+
 ## 4.4.4
 
 ### Patch Changes
