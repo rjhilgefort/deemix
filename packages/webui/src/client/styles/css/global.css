@@ -196,16 +196,20 @@
 
 	@media (max-width: 767px) {
 		.fixed-footer footer {
+			position: fixed;
+			/* 50px offset for mobile browser bottom bars */
+			bottom: 50px;
+			left: 0;
+			right: 0;
 			flex-direction: column;
 			height: auto;
 			gap: 0.5rem;
 			align-items: stretch;
-			/* Break out of 95% container */
-			width: 100vw;
-			margin-left: -2.63vw;
-			padding: 0.75rem 2.63vw;
-			padding-bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
+			width: 100%;
+			margin: 0;
+			padding: 0.75rem 1rem;
 			box-sizing: border-box;
+			z-index: 20;
 		}
 
 		.fixed-footer footer > * {
