@@ -9,7 +9,7 @@
 		".": "./dist/index.js"
 	},
 	"scripts": {
-		"build": "tsc",
+		"build": "echo 'Using pre-built dist'",
 		"check-types": "tsc --noEmit",
 		"dev": "tsc --watch",
 		"lint": "eslint src",

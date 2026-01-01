@@ -10,7 +10,7 @@
 		"./index.ts": "./src/index.ts"
 	},
 	"scripts": {
-		"build": "tsc && cp action.yml dist/",
+		"build": "echo 'Using pre-built dist'",
 		"check-types": "tsc --noEmit",
 		"dev": "tsc --watch",
 		"lint": "eslint src",
