@@ -1,0 +1,1 @@
+{"version":3,"file":"makeApiClient.d.ts","sourceRoot":"","sources":["../src/makeApiClient.ts"],"names":[],"mappings":"AAGA,eAAO,MAAM,aAAa,2BAGvB;IACD,IAAI,EAAE,MAAM,CAAA;IACZ,WAAW,EAAE,MAAM,CAAA;CACpB;eACY,MAAM;WAaV,CAAC,OAAO,MAAM,SAAS,CAAC;UAMzB,CAAC,OAAO,MAAM,QAAQ,CAAC;CAM7B,CAAA"}
