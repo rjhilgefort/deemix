@@ -1,5 +1,11 @@
 # deemix-webui
 
+## 4.4.3
+
+### Patch Changes
+
+- 35bfefe: Add safe area insets for mobile browsers
+
 ## 4.4.2
 
 ### Patch Changes
