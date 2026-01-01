@@ -1,0 +1,22 @@
+#!/bin/sh
+
+# Check if pushing to main branch
+current_branch=$(git rev-parse --abbrev-ref HEAD)
+push_branch=$(git rev-parse --abbrev-ref @{push} 2>/dev/null | sed 's/.*\///')
+
+if [ "$current_branch" = "main" ] || [ "$push_branch" = "main" ]; then
+  # Count changeset files (excluding README.md)
+  changeset_count=$(find .changeset -name "*.md" ! -name "README.md" 2>/dev/null | wc -l | tr -d ' ')
+
+  if [ "$changeset_count" -eq 0 ]; then
+    echo ""
+    echo "❌ No changesets found!"
+    echo ""
+    echo "You must add a changeset before pushing to main."
+    echo "Run: pnpm changeset"
+    echo ""
+    exit 1
+  else
+    echo "✓ Found $changeset_count changeset(s)"
+  fi
+fi
