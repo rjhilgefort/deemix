@@ -197,23 +197,38 @@
 	@media (max-width: 767px) {
 		.fixed-footer footer {
 			flex-direction: column;
-			padding: 0.75rem;
-			padding-right: 4.5rem; /* space for FAB */
 			height: auto;
 			gap: 0.5rem;
 			align-items: stretch;
+			/* Break out of 95% container */
+			width: 100vw;
+			margin-left: -2.63vw;
+			padding: 0.75rem 2.63vw;
+			box-sizing: border-box;
 		}
 
 		.fixed-footer footer > * {
+			width: 100%;
 			flex-grow: 0;
 		}
 
 		.fixed-footer footer .btn {
 			width: 100%;
-			padding: 0.75rem 1rem;
+			padding: 0.875rem 1rem;
 			height: auto;
-			font-size: 0.875rem;
+			font-size: 1rem;
 			justify-content: center;
+			display: flex;
+			border-radius: 0.5rem;
+		}
+
+		.fixed-footer footer .btn-flat {
+			background: transparent;
+			border: 1px solid rgba(255, 255, 255, 0.3);
+		}
+
+		.fixed-footer footer .btn .material-icons {
+			display: none;
 		}
 	}
 

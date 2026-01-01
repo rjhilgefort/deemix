@@ -36,9 +36,13 @@ const isExpanded = ref(localStorage.getItem("downloadTabOpen") === "true");
 const clientMode = computed(() => loginStore.clientMode);
 const isSlim = computed(() => appInfoStore.hasSlimDownloads);
 const showTags = computed(() => appInfoStore.showBitrateTags);
-const isMobileDownloadsOpen = computed(() => appInfoStore.isMobileDownloadsOpen);
+const isMobileDownloadsOpen = computed(
+	() => appInfoStore.isMobileDownloadsOpen
+);
 
-const queueCount = computed(() => queue.value.length + queueComplete.value.length);
+const queueCount = computed(
+	() => queue.value.length + queueComplete.value.length
+);
 
 function toggleMobileDownloads() {
 	appInfoStore.toggleMobileDownloads();
@@ -400,11 +404,11 @@ onUnmounted(() => {
 	<!-- Mobile FAB button (when sheet is closed) -->
 	<button
 		v-if="!isMobileDownloadsOpen"
-		class="bg-primary fixed bottom-4 right-4 z-30 flex h-14 w-14 items-center justify-center rounded-full shadow-lg md:hidden"
+		class="bg-primary fixed bottom-4 right-4 z-30 flex h-14 w-14 items-center justify-center rounded-full border-2 border-white/30 shadow-lg md:hidden"
 		aria-label="Open downloads"
 		@click="toggleMobileDownloads"
 	>
-		<i class="material-icons text-white text-2xl">download</i>
+		<i class="material-icons text-2xl text-white">download</i>
 		<span
 			v-if="queueCount > 0"
 			class="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white"
