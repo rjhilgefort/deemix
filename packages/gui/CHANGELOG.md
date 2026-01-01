@@ -1,5 +1,12 @@
 # deemix-gui
 
+## 0.4.7
+
+### Patch Changes
+
+- Updated dependencies [d95650c]
+  - deemix-webui@4.4.6
+
 ## 0.4.6
 
 ### Patch Changes

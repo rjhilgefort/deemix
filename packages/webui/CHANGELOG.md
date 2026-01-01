@@ -1,5 +1,11 @@
 # deemix-webui
 
+## 4.4.6
+
+### Patch Changes
+
+- d95650c: Revert to sticky footer with extra bottom padding for browser bars
+
 ## 4.4.5
 
 ### Patch Changes
