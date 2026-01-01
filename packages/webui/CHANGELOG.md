@@ -1,5 +1,19 @@
 # deemix-webui
 
+## 4.4.2
+
+### Patch Changes
+
+- 6c7e28e: Add automated versioning and deployment pipeline with changeset requirement
+- 4d03f54: Fix CI push hook bypass
+- 7c0a113: Improve mobile footer button styling
+- 5a3d8a9: Mobile footer button improvements:
+  - Footer buttons now full-width and properly centered (break out of container)
+  - Differentiated button styles: primary (blue filled) vs secondary (transparent with border)
+  - Removed duplicate download icon from buttons (FAB already has it)
+  - Added border to FAB to distinguish from footer buttons
+  - Rounded corners and proper spacing
+
 ## 4.4.1
 
 ### Patch Changes
