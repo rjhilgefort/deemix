@@ -64,7 +64,7 @@ jobs:
           pnpm changeset version
           git add -A
           git commit --no-verify -m "chore(repo): version packages" || echo "No changes to commit"
-          git push
+          git push --no-verify
 
       - name: Get version from package.json
         id: version
