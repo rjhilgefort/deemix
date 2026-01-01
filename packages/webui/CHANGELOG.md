@@ -1,5 +1,11 @@
 # deemix-webui
 
+## 4.4.7
+
+### Patch Changes
+
+- 03e0f98: Reduce footer bottom padding to 1.5rem
+
 ## 4.4.6
 
 ### Patch Changes
