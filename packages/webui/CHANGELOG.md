@@ -1,5 +1,11 @@
 # deemix-webui
 
+## 4.4.4
+
+### Patch Changes
+
+- 838e7d0: Fix safe area for main content area on mobile
+
 ## 4.4.3
 
 ### Patch Changes
