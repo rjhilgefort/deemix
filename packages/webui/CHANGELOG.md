@@ -1,5 +1,11 @@
 # deemix-webui
 
+## 4.4.8
+
+### Patch Changes
+
+- 68b7fcd: Add CLAUDE.md context file for resuming UI work
+
 ## 4.4.7
 
 ### Patch Changes
